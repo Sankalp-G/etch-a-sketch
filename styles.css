@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+#grid_container{
+    height: 80vmin;
+    width: 80vmin;
+    margin: 10vmin;
+    background-color: white;
+    box-shadow: -5px 5px 10px rgb(173, 172, 172), -5px -5px 10px rgb(173, 172, 172), 5px -5px 10px rgb(173, 172, 172), 5px 5px 10px rgb(173, 172, 172);
+    border-radius: 5px;
+}
