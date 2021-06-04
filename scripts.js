@@ -1,6 +1,7 @@
 //query selectors
 
 const gridContainer = document.querySelector('#grid_container')
+const clearButton = document.querySelector("#clear_button")
 const cellDiv = document.createElement('div')
 cellDiv.setAttribute('id', 'grid_cell')
 
@@ -17,6 +18,11 @@ function cloneElement(element, num, appendTo){
     }
 }
 
+function clearGrid(){
+    allCells.forEach((cell) => {
+        cell.setAttribute('style', 'background-color: white;')
+    })
+}
 
 
 //####
@@ -31,3 +37,5 @@ allCells.forEach((cell) => {
         cell.setAttribute('style', 'background-color: black;')
     });
 });
+
+clearButton.onclick = clearGrid
