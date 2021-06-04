@@ -9,7 +9,16 @@ body{
     height: 80vmin;
     width: 80vmin;
     margin: 10vmin;
-    background-color: white;
+    background-color: rgb(80, 79, 79);
     box-shadow: -5px 5px 10px rgb(173, 172, 172), -5px -5px 10px rgb(173, 172, 172), 5px -5px 10px rgb(173, 172, 172), 5px 5px 10px rgb(173, 172, 172);
     border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(16, 1fr) ;
+    grid-template-rows: repeat(16, 1fr) ;
+    gap: 1px;
+}
+
+#grid_cell{
+    background-color: white;
 }
