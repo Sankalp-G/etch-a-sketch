@@ -3,8 +3,16 @@
 
 <body>
     <div id="menu_container" class="secondary_container">
+        <h1>Etch a sketch</h1>
         <button id="clear_button">Clear</button>
-    </div>
+            <div id="input_container">
+                No. of cells on each side: <br>
+                <form action="javascript:void(0);" autocomplete="off">
+                <input id="cell_input" type="text" pattern="[0-9]{2}" value="16" title="please enter number only">
+                <button type="submit" id="enter_button">-></button>
+                </form>
+            </div>
+        </div>
     <div id="grid_container"></div>
     <div id="color_container" class="secondary_container"></div>
 </body>
