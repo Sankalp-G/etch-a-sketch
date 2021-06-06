@@ -28,6 +28,7 @@ body{
 
 #grid_cell{
     background-color: white;
+    transition: 0.5s;
 }
 
 .secondary_container{
@@ -42,8 +43,15 @@ body{
     flex-direction: column;
 }
 
-#clear_button{
-    margin: 50px;
+#color_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button{
+    margin: 20px;
     background-color: white;
     color: gray;
     font-size: 30px;
@@ -52,6 +60,8 @@ body{
     border: 3px solid darkgray;
     border-radius: 20px;
     cursor: pointer;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* box-shadow: -2px 2px 10px rgb(173, 172, 172), -2px -2px 10px rgb(173, 172, 172), 2px -2px 10px rgb(173, 172, 172), 2px 2px 10px rgb(173, 172, 172); */
 }
 
@@ -87,4 +97,25 @@ input{
     border: 3px solid darkgray;
     border-radius: 20px;
     /* box-shadow: -2px 2px 10px rgb(173, 172, 172), -2px -2px 10px rgb(173, 172, 172), 2px -2px 10px rgb(173, 172, 172), 2px 2px 10px rgb(173, 172, 172); */
+}
+
+#random{
+    background-image: linear-gradient(to left, rgb(255, 0, 0), lightgreen , blue);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
+
+#grayscale{
+    background-image: linear-gradient(to right, white, black);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
+
+#eraser{
+    text-shadow: 1px 0 1px #000, -1px 0 1px #000, 0 1px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
+    color: white;
 }

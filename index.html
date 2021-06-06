@@ -4,7 +4,7 @@
 <body>
     <div id="menu_container" class="secondary_container">
         <h1>Etch a sketch</h1>
-        <button id="clear_button">Clear</button>
+        <button id="clear_button" class="button" style="margin: 50px;">Clear</button>
             <div id="input_container">
                 No. of cells on each side: <br>
                 <form action="javascript:void(0);" autocomplete="off">
@@ -14,7 +14,12 @@
             </div>
         </div>
     <div id="grid_container"></div>
-    <div id="color_container" class="secondary_container"></div>
+    <div id="color_container" class="secondary_container">
+        <button id="eraser" class="button">eraser</button>
+        <button id="black" class="button" style="color: black;">black</button>
+        <button id="grayscale" class="button">grayscale</button>
+        <button id="random" class="button">random</button>
+    </div>
 </body>
 
 <head>
